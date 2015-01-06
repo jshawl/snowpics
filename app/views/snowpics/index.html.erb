@@ -1,1 +1,7 @@
-snowpics view is here
+<% @snowpics.each do |snowpic| %>
+  <div>
+    <img src='<%= snowpic.image_url %>'><br>
+    <%= snowpic.caption %><br>
+    <%= snowpic.updated_at %>
+  </div>
+<% end %>
